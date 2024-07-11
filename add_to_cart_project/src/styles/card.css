@@ -1,0 +1,87 @@
+
+/* card.css  */
+
+
+section {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+
+.cards {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    width: 300px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cards:hover {
+    transform: scale(1.05);
+  }
+  
+  .image_box {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .image_box img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .details {
+    padding: 20px;
+  }
+  
+  .details p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .details p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Add colors to the author and price text */
+  .details p:nth-child(2) {
+    color: #4a90e2; /* Blue for author name */
+  }
+  
+  .details p:nth-child(3) {
+    color: #e94e77; /* Pink for price */
+  }
+  
+  .details button {
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Add a gradient background color and a shadow effect to the button */
+  .details button {
+    background: linear-gradient(135deg, #ff6f61, #ff3b2e);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details button:hover {
+    background-color: #ff3b2e;
+    transform: translateY(-2px);
+  }
+  
