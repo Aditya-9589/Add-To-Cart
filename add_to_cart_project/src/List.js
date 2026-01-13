@@ -25,7 +25,8 @@ const list = [
     },
     {
         id: 4,
-        title: "JavaScript: The Good Parts",
+        // title: "JavaScript: The Good Parts",
+        title: "Javacript: The Good Parts",
         author: "by Douglas Crockford | 15 May 2008",
         price: 150,
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn2Sz7_kUX_sIKbc0RNMN7PbZKyqvsoBlCVQ&s",

@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+import React  from 'react';
 
 const Cart = ({ cart, setCart }) => {
 
-    const [price, setPrice] = useState(0);
+    // const [price, setPrice] = useState(0);
+    // console.log(price);
 
     return (
 
@@ -12,7 +14,7 @@ const Cart = ({ cart, setCart }) => {
                 cart?.map((item) => (
                     <div className='cart_box' key={item.id} >
                         <div className='cart_img' >
-                            <img src={item.img} alt="image" ></img>
+                            <img src={item.img} alt="" ></img>
                             <p>{item.title}</p>
                         </div>
 
