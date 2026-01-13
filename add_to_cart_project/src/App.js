@@ -26,7 +26,7 @@ const App = () => {
         document.querySelector(".warning").classList.add("hide");
         setTimeout(() => {
           setWarning(false);
-        }, 500); 
+        }, 500);
       }, 2000);
       return;
     }
@@ -39,10 +39,10 @@ const App = () => {
       <div>
         <Navbar size={cart.length} setShow={setShow} />
         {
-          show ?  <Shop handleClick={handleClick} /> : 
-          <Cart cart={cart} setCart={setCart} />
+          show ? <Shop handleClick={handleClick} /> :
+            <Cart cart={cart} setCart={setCart} />
         }
-       
+
         {warning && (
           <div className={`warning ${!warning ? "hide" : ""}`}>
             Item is already present in your Cart
